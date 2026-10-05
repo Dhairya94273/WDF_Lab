@@ -1,0 +1,508 @@
+/* =========================================================
+   THEME SYSTEM
+   ========================================================= */
+
+:root {
+  /* Page */
+  --page-bg: #f5f7fb;
+  --page-text: #1f2937;
+  --page-text-strong: #111827;
+  --page-text-soft: #475467;
+
+  /* Surfaces */
+  --panel: #ffffff;
+  --panel-alt: #eef3ff;
+  --panel-soft: #f8fafc;
+
+  /* Borders / shadows */
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+  --shadow: rgba(15, 23, 42, 0.10);
+
+  /* Navigation */
+  --sidebar-bg: #16213e;
+  --sidebar-text: #ffffff;
+  --sidebar-hover: #24365f;
+
+  --navbar-bg: #1d4ed8;
+  --navbar-text: #ffffff;
+
+  /* Accent */
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+  --accent-soft: #eff6ff;
+
+  /* Status */
+  --success-bg: #e8f7ee;
+  --success-text: #198754;
+
+  --warning-bg: #fff7df;
+  --warning-text: #a16207;
+
+  --danger-bg: #feecec;
+  --danger-text: #dc2626;
+
+  --info-bg: #eaf4ff;
+  --info-text: #2563eb;
+
+  /* Form */
+  --input-bg: #ffffff;
+  --input-text: #111827;
+  --input-placeholder: #98a2b3;
+
+  /* Misc */
+  --muted: #667085;
+  --icon-color: #475467;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode {
+  /* Page */
+  --page-bg: #0b1220;
+  --page-text: #e5edf8;
+  --page-text-strong: #f8fafc;
+  --page-text-soft: #b9c7d9;
+
+  /* Surfaces */
+  --panel: #111b2d;
+  --panel-alt: #172640;
+  --panel-soft: #142033;
+
+  /* Borders / shadows */
+  --border: #26364d;
+  --border-strong: #344863;
+  --shadow: rgba(0, 0, 0, 0.35);
+
+  /* Navigation */
+  --sidebar-bg: #0f172a;
+  --sidebar-text: #eaf2ff;
+  --sidebar-hover: #1e2d48;
+
+  --navbar-bg: #172554;
+  --navbar-text: #f8fafc;
+
+  /* Accent */
+  --accent: #60a5fa;
+  --accent-hover: #93c5fd;
+  --accent-soft: #172d4d;
+
+  /* Status */
+  --success-bg: rgba(34, 197, 94, 0.14);
+  --success-text: #86efac;
+
+  --warning-bg: rgba(234, 179, 8, 0.14);
+  --warning-text: #fde68a;
+
+  --danger-bg: rgba(239, 68, 68, 0.14);
+  --danger-text: #fca5a5;
+
+  --info-bg: rgba(59, 130, 246, 0.14);
+  --info-text: #93c5fd;
+
+  /* Form */
+  --input-bg: #0d1728;
+  --input-text: #f8fafc;
+  --input-placeholder: #8fa1b8;
+
+  /* Misc */
+  --muted: #9fb0c5;
+  --icon-color: #b9c7d9;
+}
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+html {
+  color-scheme: light;
+}
+
+html:has(body.dark-mode) {
+  color-scheme: dark;
+}
+
+body {
+  background: var(--page-bg);
+  color: var(--page-text);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+
+/* Smooth theme transition */
+body,
+body * {
+  border-color: var(--border);
+}
+
+.card,
+.panel,
+.content-box,
+.section-box,
+.dashboard-box,
+.form-box,
+.login-box,
+.register-box,
+.profile-box,
+.profile-card,
+.attendance-card,
+.contact-card,
+.event-card,
+.notice-card,
+.assignment-card,
+.feedback-card,
+.result-card,
+.about-card,
+.about-hero,
+.past-event-list,
+.timetable-table {
+  background: var(--panel);
+  color: var(--page-text);
+  border-color: var(--border);
+  box-shadow: 0 10px 24px var(--shadow);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* =========================================================
+   TEXT
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--page-text-strong);
+}
+
+p {
+  color: var(--page-text);
+}
+
+.text-muted,
+.meta,
+.description,
+.detail,
+.subtext {
+  color: var(--page-text-soft) !important;
+}
+
+small {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+a {
+  color: var(--accent);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar {
+  background: var(--navbar-bg);
+  color: var(--navbar-text);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.navbar a,
+.navbar span,
+.navbar i {
+  color: var(--navbar-text);
+}
+
+
+/* =========================================================
+   SIDEBAR
+   ========================================================= */
+
+.sidebar {
+  background: var(--sidebar-bg);
+  color: var(--sidebar-text);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.sidebar a,
+.bottom-menu a,
+.menu a {
+  color: var(--sidebar-text);
+}
+
+.sidebar a:hover,
+.sidebar a.active,
+.bottom-menu a:hover,
+.menu a:hover {
+  background: var(--sidebar-hover);
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+button,
+.btn {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-primary {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+
+
+/* =========================================================
+   FORMS
+   ========================================================= */
+
+input,
+textarea,
+select {
+  background: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--border-strong);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--input-placeholder);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  background: var(--input-bg);
+  color: var(--input-text);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(
+    in srgb,
+    var(--accent) 15%,
+    transparent
+  );
+}
+
+
+/* =========================================================
+   SEARCH BOX
+   ========================================================= */
+
+.search-box {
+  background: var(--panel-soft);
+  border-color: var(--border);
+}
+
+.search-box input,
+.search-box select {
+  background: transparent;
+  color: var(--page-text);
+}
+
+
+/* =========================================================
+   BADGES / STATUS
+   ========================================================= */
+
+.event-type,
+.badge,
+.status-tag,
+.label-chip {
+  background: var(--panel-alt);
+  color: var(--page-text-strong);
+  border: 1px solid var(--border);
+}
+
+.completed,
+.success-pill {
+  background: var(--success-bg);
+  color: var(--success-text);
+}
+
+.warning,
+.warning-pill {
+  background: var(--warning-bg);
+  color: var(--warning-text);
+}
+
+.danger,
+.danger-pill {
+  background: var(--danger-bg);
+  color: var(--danger-text);
+}
+
+.info,
+.info-pill {
+  background: var(--info-bg);
+  color: var(--info-text);
+}
+
+
+/* =========================================================
+   TABLES
+   ========================================================= */
+
+table {
+  color: var(--page-text);
+  background: var(--panel);
+}
+
+th {
+  color: var(--page-text-strong);
+  background: var(--panel-alt);
+}
+
+td {
+  color: var(--page-text);
+  border-color: var(--border);
+}
+
+tr {
+  border-color: var(--border);
+}
+
+
+/* =========================================================
+   ROW / ITEM SEPARATORS
+   ========================================================= */
+
+.event-info,
+.detail-row,
+.assignment-item,
+.notice-item,
+.feedback-item,
+.result-row,
+.profile-row,
+.contact-item,
+.table-row {
+  border-color: var(--border);
+}
+
+
+/* =========================================================
+   THEME TOGGLE
+   ========================================================= */
+
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateY(-1px);
+}
+
+.theme-toggle:active {
+  transform: scale(0.95);
+}
+
+.theme-toggle i {
+  color: inherit;
+  font-size: 17px;
+}
+
+
+/* =========================================================
+   DARK MODE TOGGLE
+   ========================================================= */
+
+body.dark-mode .theme-toggle {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+  color: #f8fafc;
+}
+
+body.dark-mode .theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+body.dark-mode {
+  scrollbar-color: #334155 #0b1220;
+}
+
+body.dark-mode ::selection {
+  background: rgba(96, 165, 250, 0.3);
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   REDUCE MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  body,
+  body *,
+  .theme-toggle {
+    transition: none !important;
+  }
+}   

@@ -1,0 +1,638 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Attendance | StudentHub</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="attendence.css">
+
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="logo-section">
+            <img src="logo.jpg" alt="Student Hub Logo" class="logo">
+        </div>
+
+        <!-- Menu -->
+        <nav class="menu">
+
+            <a href="index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="profile.html">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+            <a href="timetable.html">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Timetable</span>
+            </a>
+
+            <a href="attendence.html" class="active">
+                <i class="fa-solid fa-clipboard-user"></i>
+                <span>Attendance</span>
+            </a>
+
+            <a href="assignment.html">
+                <i class="fa-solid fa-file-lines"></i>
+                <span>Assignments</span>
+            </a>
+
+            <a href="notice.html">
+                <i class="fa-solid fa-bullhorn"></i>
+                <span>Notices</span>
+            </a>
+
+            <a href="result.html">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Results</span>
+            </a>
+
+            <a href="event.html">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Events</span>
+            </a>
+
+            <a href="contect.html">
+                <i class="fa-solid fa-phone"></i>
+                <span>Contact</span>
+            </a>
+
+            <a href="feedback.html">
+                <i class="fa-solid fa-comment-dots"></i>
+                <span>Feedback</span>
+            </a>
+
+            <a href="about.html">
+                <i class="fa-solid fa-address-card"></i>
+                <span>About Us</span>
+            </a>
+
+        </nav>
+
+        <!-- Bottom Menu -->
+        <div class="bottom-menu">
+
+            <a href="login.html">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                <span>Sign In</span>
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <div class="main-content">
+
+        <!-- ================= NAVBAR ================= -->
+
+        <header class="navbar">
+
+            <div class="navbar-left">
+
+                <i class="fa-solid fa-bars"></i>
+
+                <h2>Attendance</h2>
+
+            </div>
+
+            <div class="navbar-right">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <i class="fa-solid fa-bell"></i>
+
+                <i class="fa-solid fa-user-circle"></i>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= PAGE CONTENT ================= -->
+
+        <div class="attendance-content">
+
+            <!-- ================= PAGE HEADING ================= -->
+
+            <div class="page-heading">
+
+                <h1>Attendance Overview</h1>
+
+                <p>
+                    Check your subject-wise attendance and overall attendance.
+                </p>
+
+            </div>
+
+
+            <!-- ================= SUMMARY CARDS ================= -->
+
+            <div class="summary-cards">
+
+                <!-- Overall Attendance -->
+
+                <div class="summary-card">
+
+                    <div class="summary-icon">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+
+                    <div>
+                        <h3>Overall Attendance</h3>
+                        <p class="big-number">87%</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Present -->
+
+                <div class="summary-card">
+
+                    <div class="summary-icon">
+                        <i class="fa-solid fa-user-check"></i>
+                    </div>
+
+                    <div>
+                        <h3>Present</h3>
+                        <p class="big-number">87</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Absent -->
+
+                <div class="summary-card">
+
+                    <div class="summary-icon">
+                        <i class="fa-solid fa-user-xmark"></i>
+                    </div>
+
+                    <div>
+                        <h3>Absent</h3>
+                        <p class="big-number">13</p>
+                    </div>
+
+                </div>
+
+
+                <!-- Total Lectures -->
+
+                <div class="summary-card">
+
+                    <div class="summary-icon">
+                        <i class="fa-solid fa-book"></i>
+                    </div>
+
+                    <div>
+                        <h3>Total Lectures</h3>
+                        <p class="big-number">100</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= SUBJECT ATTENDANCE ================= -->
+
+            <div class="attendance-card">
+
+                <div class="card-heading">
+
+                    <div>
+                        <h2>Subject-wise Attendance</h2>
+                        <p>Attendance for Semester 3</p>
+                    </div>
+
+                    <i class="fa-solid fa-clipboard-list"></i>
+
+                </div>
+
+
+                <div class="attendance-table-wrapper">
+
+                    <table class="attendance-table">
+
+                        <thead>
+
+                            <tr>
+
+                                <th>Subject</th>
+
+                                <th>Total Lectures</th>
+
+                                <th>Present</th>
+
+                                <th>Absent</th>
+
+                                <th>Attendance</th>
+
+                                <th>Status</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <!-- CN -->
+
+                            <tr>
+
+                                <td>
+                                    <i class="fa-solid fa-network-wired"></i>
+                                    Computer Network
+                                </td>
+
+                                <td>20</td>
+
+                                <td>18</td>
+
+                                <td>2</td>
+
+                                <td>
+
+                                    <div class="progress-container">
+
+                                        <div class="progress-bar">
+                                            <div class="progress-fill"
+                                                style="width:90%;">
+                                            </div>
+                                        </div>
+
+                                        <span>90%</span>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    <span class="status good">
+                                        Good
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <!-- WDF -->
+
+                            <tr>
+
+                                <td>
+                                    <i class="fa-solid fa-code"></i>
+                                    Web Development Framework
+                                </td>
+
+                                <td>18</td>
+
+                                <td>15</td>
+
+                                <td>3</td>
+
+                                <td>
+
+                                    <div class="progress-container">
+
+                                        <div class="progress-bar">
+                                            <div class="progress-fill"
+                                                style="width:83%;">
+                                            </div>
+                                        </div>
+
+                                        <span>83%</span>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    <span class="status good">
+                                        Good
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <!-- OOP -->
+
+                            <tr>
+
+                                <td>
+                                    <i class="fa-solid fa-cubes"></i>
+                                    Object Oriented Programming
+                                </td>
+
+                                <td>15</td>
+
+                                <td>12</td>
+
+                                <td>3</td>
+
+                                <td>
+
+                                    <div class="progress-container">
+
+                                        <div class="progress-bar">
+                                            <div class="progress-fill"
+                                                style="width:80%;">
+                                            </div>
+                                        </div>
+
+                                        <span>80%</span>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    <span class="status good">
+                                        Good
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <!-- DSA -->
+
+                            <tr>
+
+                                <td>
+                                    <i class="fa-solid fa-sitemap"></i>
+                                    Data Structures & Algorithms
+                                </td>
+
+                                <td>17</td>
+
+                                <td>14</td>
+
+                                <td>3</td>
+
+                                <td>
+
+                                    <div class="progress-container">
+
+                                        <div class="progress-bar">
+                                            <div class="progress-fill"
+                                                style="width:82%;">
+                                            </div>
+                                        </div>
+
+                                        <span>82%</span>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    <span class="status good">
+                                        Good
+                                    </span>
+                                </td>
+
+                            </tr>
+
+
+                            <!-- Maths -->
+
+                            <tr>
+
+                                <td>
+                                    <i class="fa-solid fa-calculator"></i>
+                                    Mathematics
+                                </td>
+
+                                <td>20</td>
+
+                                <td>15</td>
+
+                                <td>5</td>
+
+                                <td>
+
+                                    <div class="progress-container">
+
+                                        <div class="progress-bar">
+                                            <div class="progress-fill"
+                                                style="width:75%;">
+                                            </div>
+                                        </div>
+
+                                        <span>75%</span>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    <span class="status warning">
+                                        Warning
+                                    </span>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= ATTENDANCE RULE ================= -->
+
+            <div class="bottom-cards">
+
+                <!-- Attendance Requirement -->
+
+                <div class="info-card">
+
+                    <div class="info-icon">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Attendance Requirement</h3>
+
+                        <p>
+                            Students should maintain at least
+                            <strong>75%</strong> attendance in each subject.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Warning -->
+
+                <div class="info-card warning-card">
+
+                    <div class="info-icon">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+
+                    <div>
+
+                        <h3>Attendance Alert</h3>
+
+                        <p>
+                            Your Mathematics attendance is close to the
+                            minimum required percentage.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= RECENT ATTENDANCE ================= -->
+
+            <div class="attendance-card recent-card">
+
+                <div class="card-heading">
+
+                    <div>
+                        <h2>Recent Attendance</h2>
+                        <p>Latest attendance records</p>
+                    </div>
+
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+
+                </div>
+
+
+                <table class="recent-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Date</th>
+                            <th>Subject</th>
+                            <th>Lecture</th>
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>10 Aug 2026</td>
+
+                            <td>Computer Network</td>
+
+                            <td>Lecture</td>
+
+                            <td>
+                                <span class="present">
+                                    <i class="fa-solid fa-check"></i>
+                                    Present
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>10 Aug 2026</td>
+
+                            <td>Mathematics</td>
+
+                            <td>Lecture</td>
+
+                            <td>
+                                <span class="absent">
+                                    <i class="fa-solid fa-xmark"></i>
+                                    Absent
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>09 Aug 2026</td>
+
+                            <td>WDF</td>
+
+                            <td>Lab</td>
+
+                            <td>
+                                <span class="present">
+                                    <i class="fa-solid fa-check"></i>
+                                    Present
+                                </span>
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>09 Aug 2026</td>
+
+                            <td>DSA</td>
+
+                            <td>Lecture</td>
+
+                            <td>
+                                <span class="present">
+                                    <i class="fa-solid fa-check"></i>
+                                    Present
+                                </span>
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="theme.js"></script>
+</body>
+
+</html>

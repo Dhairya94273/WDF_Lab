@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Events</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="event.css">
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="logo-section">
+            <img src="logo.jpg" alt="Student Hub Logo" class="logo">
+        </div>
+
+        <nav class="menu">
+            <a href="index.html"><i class="fa-solid fa-house"></i><span>Home</span></a>
+            <a href="profile.html"><i class="fa-solid fa-user"></i><span>Profile</span></a>
+            <a href="timetable.html"><i class="fa-solid fa-calendar-days"></i><span>Timetable</span></a>
+            <a href="attendence.html"><i class="fa-solid fa-clipboard-user"></i><span>Attendance</span></a>
+            <a href="assignment.html"><i class="fa-solid fa-file-lines"></i><span>Assignments</span></a>
+            <a href="notice.html"><i class="fa-solid fa-bullhorn"></i><span>Notices</span></a>
+            <a href="result.html"><i class="fa-solid fa-graduation-cap"></i><span>Results</span></a>
+            <a href="event.html" class="active"><i class="fa-solid fa-calendar-check"></i><span>Events</span></a>
+            <a href="contect.html"><i class="fa-solid fa-phone"></i><span>Contact</span></a>
+            <a href="feedback.html"><i class="fa-solid fa-comment-dots"></i><span>Feedback</span></a>
+            <a href="about.html"><i class="fa-solid fa-address-card"></i><span>About Us</span></a>
+        </nav>
+
+        <div class="bottom-menu">
+            <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i><span>Sign In</span></a>
+        </div>
+    </aside>
+
+    <div class="main-content">
+        <header class="navbar">
+            <div class="navbar-left">
+                <i class="fa-solid fa-bars"></i>
+                <h2>University Events</h2>
+            </div>
+
+            <div class="navbar-right">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="eventSearch" type="text" placeholder="Search events..." aria-label="Search events">
+                </div>
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-user-circle"></i>
+            </div>
+        </header>
+
+        <section class="events-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-calendar-days"></i>Upcoming Events</h2>
+            </div>
+            <div class="event-grid" id="eventGrid"></div>
+        </section>
+
+        <section class="events-section">
+            <div class="section-title">
+                <h2><i class="fa-solid fa-clock-rotate-left"></i>Past Events</h2>
+            </div>
+            <div class="past-event-list" id="pastEventList"></div>
+        </section>
+    </div>
+
+    <script src="theme.js"></script>
+    <script src="event.js"></script>
+</body>
+</html>

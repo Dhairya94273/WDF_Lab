@@ -1,0 +1,1166 @@
+/*=========================================
+        GOOGLE FONT
+=========================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/*=========================================
+        RESET
+=========================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#F5F7FB;
+    color:#333;
+}
+
+/*=========================================
+        SIDEBAR
+=========================================*/
+
+.sidebar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:250px;
+
+    height:100vh;
+
+    background:#16213E;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    box-shadow:4px 0 15px rgba(0,0,0,.15);
+
+    overflow:hidden;
+
+    z-index:1000;
+
+}
+
+/*=========================================
+        LOGO
+=========================================*/
+
+.logo-section{
+
+    height:110px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-bottom:1px solid rgba(255,255,255,.15);
+
+    padding:15px;
+
+}
+
+.logo{
+
+    width:180px;
+
+    height:70px;
+
+    object-fit:contain;
+
+}
+
+/*=========================================
+        MENU
+=========================================*/
+
+.menu{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    padding-top:10px;
+
+}
+
+.menu::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+.menu::-webkit-scrollbar-thumb{
+
+    background:#3B82F6;
+
+    border-radius:20px;
+
+}
+
+.sidebar a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:15px 22px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    border-left:4px solid transparent;
+
+}
+
+.sidebar a i{
+
+    width:20px;
+
+    font-size:18px;
+
+    text-align:center;
+
+}
+
+.sidebar a:hover{
+
+    background:#2563EB;
+
+    border-left:4px solid #fff;
+
+    padding-left:28px;
+
+}
+
+.sidebar a.active{
+
+    background:#2563EB;
+
+    border-left:4px solid #fff;
+
+}
+
+/*=========================================
+        BOTTOM MENU
+=========================================*/
+
+.bottom-menu{
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    padding:10px 0;
+
+}
+
+/*=========================================
+        MAIN CONTENT
+=========================================*/
+
+.main-content{
+
+    margin-left:250px;
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+/*=========================================
+        NAVBAR
+=========================================*/
+
+.navbar{
+
+    position:sticky;
+
+    top:0;
+
+    height:60px;
+
+    background:#1D4ED8;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 25px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.12);
+
+    z-index:500;
+
+}
+
+.navbar-left,
+
+.navbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.navbar h2{
+
+    font-size:22px;
+
+    font-weight:600;
+
+}
+
+.navbar i{
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.navbar i:hover{
+
+    transform:scale(1.1);
+
+}
+/*=========================================
+        REGISTER SECTION
+=========================================*/
+
+.register-section{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+/*=========================================
+        REGISTER CARD
+=========================================*/
+
+.register-card{
+
+    width:650px;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.10);
+
+    transition:.35s;
+
+}
+
+.register-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+/*=========================================
+        REGISTER HEADER
+=========================================*/
+
+.register-header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.register-icon{
+
+    width:85px;
+
+    height:85px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#fff;
+
+    font-size:34px;
+
+    margin-bottom:18px;
+
+}
+
+.register-header h2{
+
+    font-size:30px;
+
+    color:#163A8A;
+
+    margin-bottom:10px;
+
+}
+
+.register-header p{
+
+    color:#777;
+
+    font-size:15px;
+
+}
+
+/*=========================================
+        FORM
+=========================================*/
+
+form{
+
+    width:100%;
+
+}
+
+/*=========================================
+        TWO COLUMN ROW
+=========================================*/
+
+.row{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:20px;
+
+}
+
+/*=========================================
+        INPUT BOX
+=========================================*/
+
+.input-box{
+
+    position:relative;
+
+    margin-bottom:22px;
+
+}
+
+.input-box label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#333;
+
+}
+
+.input-box i{
+
+    position:absolute;
+
+    left:16px;
+
+    top:46px;
+
+    color:#777;
+
+    font-size:16px;
+
+}
+
+.input-box input{
+
+    width:100%;
+
+    height:52px;
+
+    padding-left:48px;
+
+    padding-right:50px;
+
+    border:1px solid #D8D8D8;
+
+    border-radius:10px;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    outline:none;
+
+    background:#fff;
+
+}
+
+.input-box input:focus{
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 8px rgba(37,99,235,.20);
+
+}
+
+/*=========================================
+        PASSWORD BOX
+=========================================*/
+
+.password-box{
+
+    position:relative;
+
+}
+
+.toggle-password{
+
+    position:absolute;
+
+    top:45px;
+
+    right:16px;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    color:#666;
+
+    font-size:17px;
+
+    transition:.3s;
+
+}
+
+.toggle-password:hover{
+
+    color:#2563EB;
+
+}
+
+/*=========================================
+        CARD ANIMATION
+=========================================*/
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.register-card{
+
+    animation:fadeUp .8s ease;
+
+}
+/*=========================================
+        PASSWORD REQUIREMENTS
+=========================================*/
+
+.instruction{
+
+    margin:20px 0 25px;
+
+    padding:18px 22px;
+
+    background:#EEF5FF;
+
+    border-left:5px solid #2563EB;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 12px rgba(0,0,0,.05);
+
+}
+
+.instruction h4{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:#1D4ED8;
+
+    font-size:17px;
+
+    margin-bottom:12px;
+
+}
+
+.instruction h4 i{
+
+    font-size:18px;
+
+}
+
+.instruction ul{
+
+    margin-left:22px;
+
+    color:#555;
+
+}
+
+.instruction li{
+
+    margin-bottom:8px;
+
+    line-height:1.7;
+
+    font-size:14px;
+
+}
+
+/*=========================================
+        TERMS & CONDITIONS
+=========================================*/
+
+.terms{
+
+    margin:22px 0;
+
+}
+
+.terms label{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+    color:#555;
+
+    font-size:14px;
+
+    line-height:1.6;
+
+    cursor:pointer;
+
+}
+
+.terms input[type="checkbox"]{
+
+    width:18px;
+
+    height:18px;
+
+    margin-top:2px;
+
+    accent-color:#2563EB;
+
+    cursor:pointer;
+
+}
+
+.terms a{
+
+    color:#2563EB;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.terms a:hover{
+
+    text-decoration:underline;
+
+}
+
+/*=========================================
+        REGISTER BUTTON
+=========================================*/
+
+.register-btn{
+
+    width:100%;
+
+    height:54px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:linear-gradient(135deg,#2563EB,#1D4ED8);
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    transition:.3s;
+
+}
+
+.register-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 25px rgba(37,99,235,.35);
+
+}
+
+/*=========================================
+        LOGIN LINK
+=========================================*/
+
+.login-text{
+
+    margin-top:25px;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:15px;
+
+}
+
+.login-text a{
+
+    color:#2563EB;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.login-text a:hover{
+
+    text-decoration:underline;
+
+}
+
+/*=========================================
+        FOOTER
+=========================================*/
+
+.footer{
+
+    margin-top:auto;
+
+    background:#16213E;
+
+    color:#fff;
+
+    text-align:center;
+
+    padding:18px;
+
+    font-size:14px;
+
+}
+
+/*=========================================
+        SCROLLBAR
+=========================================*/
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#F1F1F1;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#2563EB;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#1D4ED8;
+
+}
+/*=========================================
+            TABLET RESPONSIVE
+=========================================*/
+
+@media (max-width:992px){
+
+.sidebar{
+
+    width:220px;
+
+}
+
+.main-content{
+
+    margin-left:220px;
+
+}
+
+.logo{
+
+    width:150px;
+
+    height:60px;
+
+}
+
+.register-card{
+
+    width:90%;
+    max-width:620px;
+
+}
+
+.row{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/*=========================================
+            MOBILE RESPONSIVE
+=========================================*/
+
+@media (max-width:768px){
+
+.sidebar{
+
+    display:none;
+
+}
+
+.main-content{
+
+    margin-left:0;
+
+}
+
+.navbar{
+
+    height:58px;
+
+    padding:0 18px;
+
+}
+
+.navbar h2{
+
+    font-size:18px;
+
+}
+
+.navbar-left{
+
+    gap:12px;
+
+}
+
+.navbar-right{
+
+    gap:16px;
+
+}
+
+.register-section{
+
+    padding:20px;
+
+}
+
+.register-card{
+
+    width:100%;
+
+    padding:30px 25px;
+
+    border-radius:16px;
+
+}
+
+.register-header h2{
+
+    font-size:26px;
+
+}
+
+.register-header p{
+
+    font-size:14px;
+
+}
+
+.row{
+
+    grid-template-columns:1fr;
+
+    gap:0;
+
+}
+
+.input-box{
+
+    margin-bottom:18px;
+
+}
+
+}
+
+/*=========================================
+            SMALL MOBILE
+=========================================*/
+
+@media (max-width:480px){
+
+.navbar{
+
+    padding:0 15px;
+
+}
+
+.navbar h2{
+
+    display:none;
+
+}
+
+.navbar i{
+
+    font-size:18px;
+
+}
+
+.register-section{
+
+    padding:15px;
+
+}
+
+.register-card{
+
+    padding:22px 18px;
+
+}
+
+.register-icon{
+
+    width:70px;
+
+    height:70px;
+
+    font-size:28px;
+
+}
+
+.register-header h2{
+
+    font-size:22px;
+
+}
+
+.register-header p{
+
+    font-size:13px;
+
+}
+
+.input-box label{
+
+    font-size:13px;
+
+}
+
+.input-box input{
+
+    height:48px;
+
+    font-size:14px;
+
+    padding-left:44px;
+
+}
+
+.input-box i{
+
+    left:14px;
+
+    font-size:15px;
+
+}
+
+.toggle-password{
+
+    right:14px;
+
+    font-size:15px;
+
+}
+
+.instruction{
+
+    padding:15px;
+
+}
+
+.instruction h4{
+
+    font-size:15px;
+
+}
+
+.instruction li{
+
+    font-size:13px;
+
+}
+
+.register-btn{
+
+    height:48px;
+
+    font-size:15px;
+
+}
+
+.login-text{
+
+    font-size:14px;
+
+}
+
+.footer{
+
+    font-size:13px;
+
+    padding:15px;
+
+}
+
+}
+
+/*=========================================
+            INPUT EFFECTS
+=========================================*/
+
+.input-box input:hover{
+
+    border-color:#2563EB;
+
+}
+
+.input-box input::placeholder{
+
+    color:#999;
+
+}
+
+/*=========================================
+            BUTTON EFFECT
+=========================================*/
+
+.register-btn:active{
+
+    transform:scale(.98);
+
+}
+
+/*=========================================
+            SELECTION COLOR
+=========================================*/
+
+::selection{
+
+    background:#2563EB;
+
+    color:#fff;
+
+}
+
+/*=========================================
+            UTILITY CLASSES
+=========================================*/
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-20{
+
+    margin-top:20px;
+
+}
+
+.mt-30{
+
+    margin-top:30px;
+
+}
+
+.mb-20{
+
+    margin-bottom:20px;
+
+}
+
+.mb-30{
+
+    margin-bottom:30px;
+
+}
+
+.shadow{
+
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+
+}
+
+.rounded{
+
+    border-radius:15px;
+
+}
+
+.primary{
+
+    color:#2563EB;
+
+}
+
+.success{
+
+    color:#16A34A;
+
+}
+
+.warning{
+
+    color:#EA580C;
+
+}
+
+.danger{
+
+    color:#DC2626;
+
+}
+
+.bg-primary{
+
+    background:#2563EB;
+
+    color:#fff;
+
+}
+
+.bg-success{
+
+    background:#16A34A;
+
+    color:#fff;
+
+}
+
+.bg-warning{
+
+    background:#EA580C;
+
+    color:#fff;
+
+}
+
+.bg-danger{
+
+    background:#DC2626;
+
+    color:#fff;
+
+}

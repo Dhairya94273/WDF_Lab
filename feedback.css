@@ -1,0 +1,615 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+/* ===========================
+   RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f7fb;
+    color:#333;
+}
+
+
+/* ===========================
+   SIDEBAR
+=========================== */
+
+.sidebar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:250px;
+    height:100vh;
+
+    background:#16213E;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    box-shadow:5px 0 18px rgba(0,0,0,.12);
+
+    z-index:999;
+
+    overflow:hidden;
+}
+
+
+/* ===========================
+   LOGO
+=========================== */
+
+.logo-section{
+
+    height:110px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-bottom:1px solid rgba(255,255,255,.12);
+
+    padding:15px;
+}
+
+.logo{
+
+    width:180px;
+
+    height:70px;
+
+    object-fit:contain;
+}
+
+
+/* ===========================
+   MENU
+=========================== */
+
+.menu{
+
+    flex:1;
+
+    overflow-y:auto;
+
+    padding:10px 0;
+}
+
+.menu::-webkit-scrollbar{
+
+    width:6px;
+}
+
+.menu::-webkit-scrollbar-thumb{
+
+    background:#2563EB;
+
+    border-radius:10px;
+}
+
+.sidebar a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 24px;
+
+    transition:.35s;
+
+    font-size:15px;
+
+    border-left:4px solid transparent;
+}
+
+.sidebar a i{
+
+    width:22px;
+
+    text-align:center;
+
+    font-size:18px;
+}
+
+.sidebar a:hover{
+
+    background:#2563EB;
+
+    border-left:4px solid white;
+
+    padding-left:30px;
+}
+
+.sidebar a.active{
+
+    background:#2563EB;
+
+    border-left:4px solid white;
+}
+
+
+/* ===========================
+   BOTTOM MENU
+=========================== */
+
+.bottom-menu{
+
+    border-top:1px solid rgba(255,255,255,.15);
+
+    padding:10px 0;
+}
+
+
+/* ===========================
+   MAIN CONTENT
+=========================== */
+
+.main-content{
+
+    margin-left:250px;
+
+    min-height:100vh;
+}
+
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+
+    position:sticky;
+
+    top:0;
+
+    height:60px;
+
+    background:#1D4ED8;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 25px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.12);
+
+    z-index:500;
+}
+
+.navbar-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+}
+
+.navbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:22px;
+}
+
+.navbar h2{
+
+    font-size:22px;
+
+    font-weight:600;
+}
+
+.navbar i{
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.navbar i:hover{
+
+    transform:scale(1.15);
+}
+
+
+/* ===========================
+   FEEDBACK CONTAINER
+=========================== */
+
+.feedback-container{
+
+    padding:35px;
+
+    max-width:1000px;
+
+    margin:auto;
+}
+
+
+/* ===========================
+   FEEDBACK HEADER
+=========================== */
+
+.feedback-header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+}
+
+.feedback-header > i{
+
+    font-size:48px;
+
+    color:#2563EB;
+
+    margin-bottom:12px;
+}
+
+.feedback-header h1{
+
+    font-size:28px;
+
+    color:#16213E;
+
+    margin-bottom:8px;
+}
+
+.feedback-header p{
+
+    color:#777;
+
+    font-size:15px;
+}
+
+
+/* ===========================
+   FEEDBACK CARD
+=========================== */
+
+.feedback-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+
+/* ===========================
+   FORM GROUP
+=========================== */
+
+.form-group{
+
+    margin-bottom:22px;
+}
+
+.form-group label{
+
+    display:block;
+
+    font-weight:600;
+
+    color:#333;
+
+    margin-bottom:8px;
+
+    font-size:14px;
+}
+
+.form-group label i{
+
+    color:#2563EB;
+
+    margin-right:7px;
+}
+
+
+/* ===========================
+   INPUT / SELECT / TEXTAREA
+=========================== */
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    width:100%;
+
+    padding:13px 15px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:14px;
+
+    background:#fafafa;
+
+    transition:.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    border-color:#2563EB;
+
+    background:white;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.1);
+}
+
+.form-group textarea{
+
+    resize:vertical;
+
+    min-height:130px;
+}
+
+
+/* ===========================
+   RATING
+=========================== */
+
+.rating{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:5px;
+}
+
+.rating label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:5px;
+
+    cursor:pointer;
+
+    color:#777;
+
+    margin:0;
+
+    transition:.3s;
+}
+
+.rating input{
+
+    width:auto;
+
+    accent-color:#2563EB;
+}
+
+.rating label i{
+
+    color:#f5b400;
+
+    font-size:17px;
+}
+
+.rating label span{
+
+    font-size:13px;
+}
+
+
+/* ===========================
+   SUBMIT BUTTON
+=========================== */
+
+.submit-btn{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#2563EB;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.submit-btn i{
+
+    margin-right:8px;
+}
+
+.submit-btn:hover{
+
+    background:#1D4ED8;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 5px 12px rgba(37,99,235,.25);
+}
+
+
+/* ===========================
+   SUGGESTION CARD
+=========================== */
+
+.suggestion-card{
+
+    margin-top:25px;
+
+    background:#eef4ff;
+
+    border-left:5px solid #2563EB;
+
+    border-radius:10px;
+
+    padding:20px;
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:15px;
+}
+
+.suggestion-card > i{
+
+    font-size:28px;
+
+    color:#2563EB;
+
+    margin-top:2px;
+}
+
+.suggestion-card h3{
+
+    color:#16213E;
+
+    margin-bottom:5px;
+
+    font-size:17px;
+}
+
+.suggestion-card p{
+
+    color:#666;
+
+    font-size:14px;
+
+    line-height:1.6;
+}
+
+
+/* ===========================
+   RESPONSIVE DESIGN
+=========================== */
+
+@media(max-width:900px){
+
+    .sidebar{
+
+        width:210px;
+    }
+
+    .main-content{
+
+        margin-left:210px;
+    }
+
+    .feedback-container{
+
+        padding:25px;
+    }
+
+}
+
+
+@media(max-width:700px){
+
+    .sidebar{
+
+        width:70px;
+    }
+
+    .logo{
+
+        width:55px;
+    }
+
+    .sidebar a{
+
+        justify-content:center;
+
+        padding:15px 10px;
+    }
+
+    .sidebar a span{
+
+        display:none;
+    }
+
+    .sidebar a i{
+
+        margin:0;
+    }
+
+    .main-content{
+
+        margin-left:70px;
+    }
+
+    .navbar-left h2{
+
+        font-size:18px;
+    }
+
+    .feedback-container{
+
+        padding:20px 15px;
+    }
+
+    .feedback-card{
+
+        padding:22px;
+    }
+
+    .feedback-header h1{
+
+        font-size:23px;
+    }
+
+}

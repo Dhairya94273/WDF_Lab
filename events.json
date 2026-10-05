@@ -1,0 +1,160 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "status": "upcoming",
+      "type": "Technical Event",
+      "title": "Web Development Workshop",
+      "description": "Learn modern web development techniques including HTML, CSS, JavaScript and responsive design.",
+      "day": "15",
+      "month": "AUG",
+      "time": "10:00 AM - 1:00 PM",
+      "location": "Computer Lab",
+      "host": "Department of IT"
+    },
+    {
+      "id": 2,
+      "status": "upcoming",
+      "type": "Hackathon",
+      "title": "University Hackathon 2026",
+      "description": "Participate in an exciting coding competition and build innovative solutions with your team.",
+      "day": "20",
+      "month": "AUG",
+      "time": "9:00 AM - 6:00 PM",
+      "location": "Innovation Center",
+      "host": "University Innovation Cell"
+    },
+    {
+      "id": 3,
+      "status": "upcoming",
+      "type": "Seminar",
+      "title": "Cyber Security Awareness Seminar",
+      "description": "Understand cyber threats, online safety, ethical hacking and cybersecurity careers.",
+      "day": "25",
+      "month": "AUG",
+      "time": "11:00 AM - 1:00 PM",
+      "location": "Seminar Hall",
+      "host": "Cyber Security Department"
+    },
+    {
+      "id": 4,
+      "status": "upcoming",
+      "type": "Cultural Event",
+      "title": "University Cultural Fest",
+      "description": "Enjoy music, dance, drama, competitions and various cultural activities.",
+      "day": "02",
+      "month": "SEP",
+      "time": "10:00 AM - 7:00 PM",
+      "location": "University Ground",
+      "host": "Student Activity Center"
+    },
+    {
+      "id": 5,
+      "status": "upcoming",
+      "type": "Workshop",
+      "title": "Python Programming Workshop",
+      "description": "Learn Python programming fundamentals, problem solving and basic application development.",
+      "day": "08",
+      "month": "SEP",
+      "time": "10:00 AM - 1:00 PM",
+      "location": "Programming Lab",
+      "host": "Department of Computer Science"
+    },
+    {
+      "id": 6,
+      "status": "upcoming",
+      "type": "Technical Event",
+      "title": "AI and Machine Learning Seminar",
+      "description": "Explore artificial intelligence, machine learning applications and current technology trends.",
+      "day": "12",
+      "month": "SEP",
+      "time": "11:00 AM - 2:00 PM",
+      "location": "Main Auditorium",
+      "host": "AI & Data Science Department"
+    },
+    {
+      "id": 7,
+      "status": "upcoming",
+      "type": "Competition",
+      "title": "Coding Challenge 2026",
+      "description": "Test your programming and problem-solving skills through an exciting coding competition.",
+      "day": "18",
+      "month": "SEP",
+      "time": "9:00 AM - 4:00 PM",
+      "location": "Computer Lab 2",
+      "host": "Coding Club"
+    },
+    {
+      "id": 8,
+      "status": "upcoming",
+      "type": "Career Event",
+      "title": "Campus Placement Preparation",
+      "description": "Learn about aptitude tests, technical interviews, resume preparation and placement strategies.",
+      "day": "22",
+      "month": "SEP",
+      "time": "10:00 AM - 1:00 PM",
+      "location": "Seminar Hall",
+      "host": "Training & Placement Cell"
+    },
+    {
+      "id": 9,
+      "status": "upcoming",
+      "type": "Sports Event",
+      "title": "University Sports Meet",
+      "description": "Participate in various indoor and outdoor sports competitions organized for university students.",
+      "day": "28",
+      "month": "SEP",
+      "time": "8:00 AM - 5:00 PM",
+      "location": "University Sports Ground",
+      "host": "Sports Committee"
+    },
+    {
+      "id": 10,
+      "status": "upcoming",
+      "type": "Innovation Event",
+      "title": "Student Innovation Expo",
+      "description": "Showcase innovative projects, prototypes and technology solutions developed by students.",
+      "day": "05",
+      "month": "OCT",
+      "time": "10:00 AM - 5:00 PM",
+      "location": "Innovation Center",
+      "host": "Innovation & Entrepreneurship Cell"
+    },
+
+    {
+      "id": 11,
+      "status": "past",
+      "title": "AI & Machine Learning Workshop",
+      "date": "10 July 2026",
+      "category": "Workshop"
+    },
+    {
+      "id": 12,
+      "status": "past",
+      "title": "Coding Competition",
+      "date": "25 June 2026",
+      "category": "Competition"
+    },
+    {
+      "id": 13,
+      "status": "past",
+      "title": "Career Guidance Seminar",
+      "date": "15 June 2026",
+      "category": "Seminar"
+    },
+    {
+      "id": 14,
+      "status": "past",
+      "title": "Digital Marketing Workshop",
+      "date": "05 June 2026",
+      "category": "Workshop"
+    },
+    {
+      "id": 15,
+      "status": "past",
+      "title": "Inter College Sports Tournament",
+      "date": "28 May 2026",
+      "category": "Sports Event"
+    }
+  ]
+}

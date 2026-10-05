@@ -1,0 +1,584 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Student Hub Portal</title>
+
+
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+         CSS
+    ====================================================== -->
+
+    <link rel="stylesheet"
+        href="style.css">
+
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="sidebar">
+
+
+        <!-- ================= LOGO ================= -->
+
+        <div class="logo-section">
+
+            <img src="logo.jpg"
+                alt="Student Hub Logo"
+                class="logo">
+
+        </div>
+
+
+        <!-- ================= MENU ================= -->
+
+        <nav class="menu">
+
+
+            <a href="index.html"
+                class="active">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Home</span>
+
+            </a>
+
+
+            <a href="profile.html">
+
+                <i class="fa-solid fa-user"></i>
+
+                <span>Profile</span>
+
+            </a>
+
+
+            <a href="timetable.html">
+
+                <i class="fa-solid fa-calendar-days"></i>
+
+                <span>Timetable</span>
+
+            </a>
+
+
+            <a href="attendence.html">
+
+                <i class="fa-solid fa-clipboard-user"></i>
+
+                <span>Attendance</span>
+
+            </a>
+
+
+            <a href="assignment.html">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                <span>Assignments</span>
+
+            </a>
+
+
+            <a href="notice.html">
+
+                <i class="fa-solid fa-bullhorn"></i>
+
+                <span>Notices</span>
+
+            </a>
+
+
+            <a href="result.html">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <span>Results</span>
+
+            </a>
+
+
+            <a href="event.html">
+
+                <i class="fa-solid fa-calendar-check"></i>
+
+                <span>Events</span>
+
+            </a>
+
+
+            <a href="contect.html">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <span>Contact</span>
+
+            </a>
+
+
+            <a href="feedback.html">
+
+                <i class="fa-solid fa-comment-dots"></i>
+
+                <span>Feedback</span>
+
+            </a>
+
+
+            <a href="about.html">
+
+                <i class="fa-solid fa-address-card"></i>
+
+                <span>About Us</span>
+
+            </a>
+
+
+        </nav>
+
+
+        <!-- ================= BOTTOM MENU ================= -->
+
+        <div class="bottom-menu">
+
+            <a href="login.html">
+
+                <i class="fa-solid fa-right-to-bracket"></i>
+
+                <span>Sign In</span>
+
+            </a>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =====================================================
+         MAIN CONTENT
+    ====================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =================================================
+             NAVBAR
+        ================================================== -->
+
+        <header class="navbar">
+
+
+            <!-- ================= LEFT ================= -->
+
+            <div class="navbar-left">
+
+
+                <!-- Sidebar Toggle -->
+
+                <i class="fa-solid fa-bars"
+                    id="menu-toggle"
+                    title="Toggle Sidebar">
+                </i>
+
+
+                <!-- Portal Name -->
+
+                <h2>
+                    Student Hub Portal
+                </h2>
+
+
+            </div>
+
+
+
+            <!-- ================= SEARCH ================= -->
+
+            <div class="navbar-search"
+                id="navbar-search">
+
+
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search Student Hub..."
+                    autocomplete="off">
+
+
+                <!-- Search Button -->
+
+                <button
+                    type="button"
+                    id="search-btn"
+                    title="Search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+
+                <!-- Search Results -->
+
+                <div class="search-results"
+                    id="search-results">
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================= RIGHT ================= -->
+
+            <div class="navbar-right">
+
+
+                <!-- Notification -->
+
+                <i class="fa-solid fa-bell"
+                    id="notification-btn"
+                    title="Notifications">
+                </i>
+
+
+                <!-- Profile -->
+
+                <i class="fa-solid fa-circle-user"
+                    id="profile-btn"
+                    title="Profile">
+                </i>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- =================================================
+             WELCOME
+        ================================================== -->
+
+        <section class="welcome">
+
+            <h1>
+                Welcome Back
+            </h1>
+
+            <p>
+
+                Manage your attendance, assignments, notices,
+                events, timetable and academic activities
+                from one modern dashboard.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             DASHBOARD CARDS
+        ================================================== -->
+
+        <section class="cards">
+
+
+            <!-- Latest Notice -->
+
+            <div class="card">
+
+                <div class="card-icon blue">
+
+                    <i class="fa-solid fa-bullhorn"></i>
+
+                </div>
+
+                <h3>
+                    Latest Notice
+                </h3>
+
+                <p>
+
+                    Semester Examination starts from
+                    <strong>15 August</strong>.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- Assignment -->
+
+            <div class="card">
+
+                <div class="card-icon green">
+
+                    <i class="fa-solid fa-file-lines"></i>
+
+                </div>
+
+                <h3>
+                    Assignment
+                </h3>
+
+                <p>
+
+                    Submit DBMS Assignment before
+                    <strong>Friday</strong>.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- Upcoming Event -->
+
+            <div class="card">
+
+                <div class="card-icon orange">
+
+                    <i class="fa-solid fa-calendar-check"></i>
+
+                </div>
+
+                <h3>
+                    Upcoming Event
+                </h3>
+
+                <p>
+
+                    Hackathon Registration closes
+                    tomorrow.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- Attendance -->
+
+            <div class="card">
+
+                <div class="card-icon red">
+
+                    <i class="fa-solid fa-chart-column"></i>
+
+                </div>
+
+                <h3>
+                    Attendance
+                </h3>
+
+                <p>
+
+                    Current Attendance:
+                    <strong>87%</strong>
+
+                </p>
+
+            </div>
+
+
+
+            <!-- Courses -->
+
+            <div class="card">
+
+                <div class="card-icon purple">
+
+                    <i class="fa-solid fa-book-open"></i>
+
+                </div>
+
+                <h3>
+                    Courses
+                </h3>
+
+                <p>
+
+                    You are enrolled in
+                    <strong>6 Subjects</strong>.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- CGPA -->
+
+            <div class="card">
+
+                <div class="card-icon cyan">
+
+                    <i class="fa-solid fa-award"></i>
+
+                </div>
+
+                <h3>
+                    CGPA
+                </h3>
+
+                <p>
+
+                    Current CGPA:
+                    <strong>8.54</strong>
+
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             QUICK ACTIONS
+        ================================================== -->
+
+        <section class="quick-section">
+
+
+            <h2>
+                Quick Actions
+            </h2>
+
+
+            <div class="quick-grid">
+
+
+                <!-- Upload Assignment -->
+
+                <div class="quick-box">
+
+                    <i class="fa-solid fa-file-arrow-up"></i>
+
+                    <h4>
+                        Upload Assignment
+                    </h4>
+
+                </div>
+
+
+                <!-- Study Material -->
+
+                <div class="quick-box">
+
+                    <i class="fa-solid fa-book"></i>
+
+                    <h4>
+                        Study Material
+                    </h4>
+
+                </div>
+
+
+                <!-- Academic Calendar -->
+
+                <div class="quick-box">
+
+                    <i class="fa-solid fa-calendar"></i>
+
+                    <h4>
+                        Academic Calendar
+                    </h4>
+
+                </div>
+
+
+                <!-- Message Faculty -->
+
+                <div class="quick-box">
+
+                    <i class="fa-solid fa-message"></i>
+
+                    <h4>
+                        Message Faculty
+                    </h4>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FOOTER
+        ================================================== -->
+
+        <footer class="footer">
+
+            <p>
+
+                Â© 2026 Student Hub Portal |
+                Designed with â¤ï¸ for Students
+
+            </p>
+
+        </footer>
+
+
+    </main>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="index.js"></script>
+
+
+    <script src="theme.js"></script>
+</body>
+
+</html>

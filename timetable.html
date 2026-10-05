@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Hub Portal</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="timetable.css">
+
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+
+<!-- ================= SIDEBAR ================= -->
+
+<aside class="sidebar">
+
+    <!-- Logo -->
+
+    <div class="logo-section">
+        <img src="logo.jpg" alt="Student Hub Logo" class="logo">
+    </div>
+
+    <!-- Menu -->
+
+    <nav class="menu">
+
+        <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+        </a>
+
+        <a href="profile.html">
+            <i class="fa-solid fa-user"></i>
+            <span>Profile</span>
+        </a>
+
+        <a href="timetable.html" class="active">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span>Timetable</span>
+        </a>
+
+        <a href="attendence.html">
+            <i class="fa-solid fa-clipboard-user"></i>
+            <span>Attendance</span>
+        </a>
+
+        <a href="assignment.html">
+            <i class="fa-solid fa-file-lines"></i>
+            <span>Assignments</span>
+        </a>
+
+        <a href="notice.html">
+            <i class="fa-solid fa-bullhorn"></i>
+            <span>Notices</span>
+        </a>
+
+        <a href="result.html">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>Results</span>
+        </a>
+
+        <a href="event.html">
+            <i class="fa-solid fa-calendar-check"></i>
+            <span>Events</span>
+        </a>
+
+        <a href="contect.html">
+            <i class="fa-solid fa-phone"></i>
+            <span>Contact</span>
+        </a>
+
+        <a href="feedback.html">
+            <i class="fa-solid fa-comment-dots"></i>
+            <span>Feedback</span>
+        </a>
+
+        <a href="about.html">
+            <i class="fa-solid fa-address-card"></i>
+            <span>About Us</span>
+        </a>
+
+    </nav>
+
+    <!-- Bottom Menu -->
+
+    <div class="bottom-menu">
+
+        <a href="login.html">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <span>Sign In</span>
+        </a>
+
+    </div>
+
+</aside>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-content">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="navbar-left">
+
+            <i class="fa-solid fa-bars"></i>
+
+            <h2>Class Timetable</h2>
+
+        </div>
+
+        <div class="navbar-right">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <i class="fa-solid fa-bell"></i>
+
+            <i class="fa-solid fa-user-circle"></i>
+
+        </div>
+
+    </header>
+
+    <!-- ================= TODAY SCHEDULE ================= -->
+
+    <section class="today-card">
+
+        <h2>
+            <i class="fa-solid fa-calendar-day"></i>
+            Today's Schedule
+        </h2>
+
+        <p>
+            Monday â€¢ Semester 3 â€¢ Information Technology
+        </p>
+
+    </section>
+
+    <!-- ================= TIMETABLE ================= -->
+
+    <section class="table-container">
+
+        <h2>Weekly Timetable</h2>
+
+        <table>
+
+            <thead>
+
+                <tr>
+
+                    <th>Time</th>
+
+                    <th>Monday</th>
+
+                    <th>Tuesday</th>
+
+                    <th>Wednesday</th>
+
+                    <th>Thursday</th>
+
+                    <th>Friday</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>09:10 - 10:10</td>
+                    <td>CN</td>
+                    <td>DSA</td>
+                    <td>WDF</td>
+                    <td>Mathematics</td>
+                    <td>CN</td>
+                </tr>
+
+                <tr>
+                    <td>10:10 - 11:10</td>
+                    <td>Mathematics</td>
+                    <td>CN</td>
+                    <td>DSA</td>
+                    <td>OOP</td>
+                    <td>WDF</td>
+                </tr>
+
+                <tr>
+                    <td>11:20 - 12:20</td>
+                    <td>WDF</td>
+                    <td>Mathematics</td>
+                    <td>CN</td>
+                    <td>DSA</td>
+                    <td>Free Lecture</td>
+                </tr>
+
+                <tr>
+                    <td>12:20 - 01:00</td>
+                    <td colspan="5"><b>Lunch Break</b></td>
+                </tr>
+
+                <tr>
+                    <td>01:00 - 03:00</td>
+                    <td>WDF Lab</td>
+                    <td>CN Lab</td>
+                    <td>OOP Lab</td>
+                    <td>DSA Lab</td>
+                    <td>WDF Lab</td>
+                </tr>
+
+                <tr>
+                    <td>03:00 - 04:00</td>
+                    <td>OOP</td>
+                    <td>WDF</td>
+                    <td>CN</td>
+                    <td>Project / Library</td>
+                    <td>DSA</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </section>
+
+    <!-- ================= FACULTY ================= -->
+
+    <section class="faculty-card">
+        <section class="faculty-card">
+
+    <h2>Faculty Information</h2>
+
+    <ul>
+
+        <li><strong>Computer Networks (CN)</strong> - Prof. ABC</li>
+
+        <li><strong>Web Development Framework (WDF)</strong> - Prof. XYZ</li>
+
+        <li><strong>Object-Oriented Programming (OOP)</strong> - Prof. PQR</li>
+
+        <li><strong>Data Structures & Algorithms (DSA)</strong> - Prof. DEF</li>
+
+        <li><strong>Mathematics</strong> - Prof. LMN</li>
+
+    </ul>
+
+</section>
+    </section>
+
+</div>
+
+    <script src="theme.js"></script>
+</body>
+</html>

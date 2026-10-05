@@ -1,0 +1,376 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Hub Portal</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="theme.css">
+</head>
+
+<body>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <!-- Logo -->
+        <div class="logo-section">
+            <img src="logo.jpg" alt="Student Hub Logo" class="logo">
+        </div>
+
+        <!-- Menu -->
+        <nav class="menu">
+
+            <a href="index.html" class="active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="profile.html">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </a>
+
+            <a href="timetable.html">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Timetable</span>
+            </a>
+
+            <a href="attendence.html">
+                <i class="fa-solid fa-clipboard-user"></i>
+                <span>Attendance</span>
+            </a>
+
+            <a href="assignment.html">
+                <i class="fa-solid fa-file-lines"></i>
+                <span>Assignments</span>
+            </a>
+
+            <a href="notice.html">
+                <i class="fa-solid fa-bullhorn"></i>
+                <span>Notices</span>
+            </a>
+
+            <a href="result.html">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>Results</span>
+            </a>
+
+            <a href="event.html">
+                <i class="fa-solid fa-calendar-check"></i>
+                <span>Events</span>
+            </a>
+
+            <a href="contect.html">
+                <i class="fa-solid fa-phone"></i>
+                <span>Contact</span>
+            </a>
+
+            <a href="feedback.html">
+                <i class="fa-solid fa-comment-dots"></i>
+                <span>Feedback</span>
+            </a>
+
+            <a href="about.html"> 
+                <i class="fa-solid fa-address-card"></i>
+                <span>About us</span>
+            </a>
+
+        </nav>
+    </aside>
+
+<!-- ===========================
+        MAIN CONTENT
+============================ -->
+
+<main class="main-content">
+
+<!-- ===========================
+            NAVBAR
+============================ -->
+
+<header class="navbar">
+
+    <div class="navbar-left">
+
+        <i class="fa-solid fa-bars"></i>
+
+        <h2>StudentHub Portal</h2>
+
+    </div>
+
+    <div class="navbar-right">
+
+        <i class="fa-solid fa-bell"></i>
+
+        <i class="fa-solid fa-user-circle"></i>
+
+    </div>
+
+</header>
+
+<!-- ===========================
+      REGISTRATION SECTION
+============================ -->
+
+<section class="register-section">
+
+<div class="register-card">
+
+<!-- Header -->
+
+<div class="register-header">
+
+<div class="register-icon">
+
+<i class="fa-solid fa-user-graduate"></i>
+
+</div>
+
+<h2>Create Student Account</h2>
+
+<p>
+
+Register to access your StudentHub Dashboard
+
+</p>
+
+</div>
+
+<!-- Form -->
+
+<form>
+
+<!-- First & Last Name -->
+
+<div class="row">
+
+<div class="input-box">
+
+<label>First Name</label>
+
+<i class="fa-solid fa-user"></i>
+
+<input
+type="text"
+placeholder="Enter First Name"
+required>
+
+</div>
+
+<div class="input-box">
+
+<label>Last Name</label>
+
+<i class="fa-solid fa-user"></i>
+
+<input
+type="text"
+placeholder="Enter Last Name"
+required>
+
+</div>
+
+</div>
+
+<!-- Middle Name -->
+
+<div class="input-box">
+
+<label>Middle Name</label>
+
+<i class="fa-solid fa-user"></i>
+
+<input
+type="text"
+placeholder="Enter Middle Name">
+
+</div>
+
+<!-- Email -->
+
+<div class="input-box">
+
+<label>Email Address</label>
+
+<i class="fa-solid fa-envelope"></i>
+
+<input
+type="email"
+placeholder="Enter Email Address"
+required>
+
+</div>
+
+<!-- Mobile -->
+
+<div class="input-box">
+
+<label>Mobile Number</label>
+
+<i class="fa-solid fa-phone"></i>
+
+<input
+type="tel"
+placeholder="Enter Mobile Number"
+required>
+
+</div>
+<!-- Password -->
+
+<div class="input-box password-box">
+
+    <label>Password</label>
+
+    <i class="fa-solid fa-lock"></i>
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Create Password"
+        required>
+
+    <button
+        type="button"
+        class="toggle-password"
+        id="togglePassword">
+
+        <i class="fa-solid fa-eye-slash"></i>
+
+    </button>
+
+</div>
+
+<!-- Password Instruction -->
+
+<div class="instruction">
+
+    <h4>
+        <i class="fa-solid fa-shield-halved"></i>
+        Password Requirements
+    </h4>
+
+    <ul>
+
+        <li>8â€“16 characters long</li>
+
+        <li>At least one uppercase letter (A-Z)</li>
+
+        <li>At least one lowercase letter (a-z)</li>
+
+        <li>At least one number (0-9)</li>
+
+        <li>At least one special character (@,#,$,!,%,&...)</li>
+
+        <li>Avoid simple passwords like 12345678</li>
+
+    </ul>
+
+</div>
+
+<!-- Confirm Password -->
+
+<div class="input-box password-box">
+
+    <label>Confirm Password</label>
+
+    <i class="fa-solid fa-lock"></i>
+
+    <input
+        type="password"
+        id="confirmPassword"
+        placeholder="Confirm Password"
+        required>
+
+    <button
+        type="button"
+        class="toggle-password"
+        id="toggleConfirm">
+
+        <i class="fa-solid fa-eye-slash"></i>
+
+    </button>
+
+</div>
+
+<!-- Terms -->
+
+<div class="terms">
+
+    <label>
+
+        <input
+            type="checkbox"
+            required>
+
+        I agree to the
+
+        <a href="terms.html">
+            Terms & Conditions
+        </a>
+
+    </label>
+
+</div>
+
+<!-- Register Button -->
+
+<button
+    type="submit"
+    class="register-btn">
+
+    <i class="fa-solid fa-user-plus"></i>
+
+    Create Account
+
+</button>
+
+</form>
+
+<!-- Login -->
+
+<div class="login-text">
+
+    Already have an account?
+
+    <a href="login.html">
+
+        Sign In
+
+    </a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+
+<footer class="footer">
+
+    <p>
+
+        Â© 2026 StudentHub Portal |
+        Designed with â¤ï¸ for Students
+
+    </p>
+
+</footer>
+
+</main>
+
+<script src="register.js"></script>
+
+    <script src="theme.js"></script>
+</body>
+
+</html>
